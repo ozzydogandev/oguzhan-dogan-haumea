@@ -1,38 +1,90 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Ozzy Dogan</title>
+    <meta name="author" content="Ozzy Dogan">
+    <meta name="description" content="First FE project">
   <style>
+  body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://www.aceinfoway.com/blog/wp-content/uploads/2020/07/front-end-developer.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    z-index: -1;
+}  
   h1{
-    color: #FFBF00;
+    color: #073f8d;
     border-bottom: 1px solid black;
     -webkit-text-stroke-width: 0.5px;
     -webkit-text-stroke-color: black;
+    font-size: 30px;
   }
   h2{
-    color: #9FE2BF;
+    color: #0a3f22;
     border-bottom: 1px solid black;
     -webkit-text-stroke-width: 0.5px;
     -webkit-text-stroke-color: black;
+    font-size: 25px;
+    font-weight: bolder;
   }
   .connect{
   color: #B93232;  
   background-color: #A0C523;
-  padding: 10px 20px;
+  padding: 10px 30px;
   border-radius: 5px;
   cursor: pointer; 
-  display: inline-block;
-  transition: background-color 0.3s; /* Smooth background color change on hover */
+  display: table;
+  transition: background-color 0.3s; 
+  background-image: url('https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-512.png');
+  background-repeat: no-repeat;
+  background-position: 105px;
+  background-size: 20px 20px;
+  }
+  .connectlink{
+    display:table;
+    margin-top: -20px;
+  }
+  p{
+  background-color: hsla(60, 46%, 73%, 0.8);
+  padding: 5px 5px;
+  border-radius: 5px;
+  display: table;   
+  }
+  .projects{
+  display: table;
+  background-color: hsla(60, 46%, 73%, 0.8);
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;  
+  }
+  .contact{
+  display: table;
+  background-color: hsla(0, 0%, 100%, 0.8);
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: -5px;
+  }
+  .ctd{
+  position: fixed;
+  bottom: 0;
+  right: 0;
   }
   </style>
   </head>
   <body>
-    
     <h1>Oguzhan Dogan</h1>
     <h2>About</h2>
-    <p>My name is Oguzhan Dogan but everyone calls me <strong>Ozzy</strong>. I'm a software QA Engineer at Burger King. I like coding and I want to be a software engineer.</p>
-    <h2>Experience</h2> 
-    <p>During my college years I worked on different projects: </p>
-    <ul>
+    <p style="margin-top: -10px;">My name is Oguzhan Dogan but everyone calls me <strong>Ozzy</strong>. I'm a software QA Engineer at Burger King. I like coding and I want to be a software engineer.</p>
+    <h2 style="margin-top: -10px;">Experience</h2> 
+    <p style="margin-top: -10px;">During my college years I worked on different projects: </p>
+    <ul class="projects" style="margin-top: -2px;">
     <li> Multiplayer Tomato Monster Game </li>
     <li> Online Auction Website </li>
     <li> Android mobile application for a pizza store </li>
@@ -40,11 +92,14 @@
     <li> Automation framework with Selenium WebDriver </li>
     <li> Creating a data graph with using Matplotlib library in Python </li> 
     </ul>
-    <div>
-    <h2 class="connect"> Connect </h2>
-    <ul>
+    <a href="https://www.linkedin.com/in/oguzhandogan1" class="connectlink">
+    <h2 class="connect" style="padding-left: 10px;">Connect</h2>
+    </a>
+    <ul class="contact">
     <li> Email: oguzhandogandev@gmail.com  </li>
     <li> Github: https://github.com/ozzydogandev </li>
-    <li> LinkedIn: https://www.linkedin.com/in/oguzhandogan1 </li>   
+    <li> LinkedIn: https://www.linkedin.com/in/oguzhandogan1 </li>
+    </ul>
+    <img class="ctd" src="https://cdn.filestackcontent.com/resize=width:600,height:315,fit:max/quality=value:90/Sn5Neh2cTqGMHSfWysgQ" alt="CTD" width="350" height="100">
   </body>
 </html>
