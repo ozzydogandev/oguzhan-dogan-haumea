@@ -1,0 +1,118 @@
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://www.aceinfoway.com/blog/wp-content/uploads/2020/07/front-end-developer.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    z-index: -1;
+}  
+  h1{
+    font-family: "Abril Fatface", serif;
+    font-weight: 900;
+    font-style: normal;
+    color: #073f8d;
+    border-bottom: 1px solid black;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+    font-size: 35px;
+  }
+  .connect{
+  font-family: "Abril Fatface", serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #B93232;  
+  background-color: #A0C523;
+  padding: 10px 30px;
+  border-radius: 5px;
+  cursor: pointer; 
+  display: table;
+  transition: background-color 0.3s; 
+  background-image: url('https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-512.png');
+  background-repeat: no-repeat;
+  background-position: 105px;
+  background-size: 20px 20px;
+  }
+  h2{
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #0a3f22;
+    border-bottom: 1px solid black;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+    font-size: 25px;
+    font-weight: bolder;
+  }
+  .connectlink{
+    display:table;
+    margin-top: -20px;
+  }
+  p{
+  background-color: hsla(60, 46%, 73%, 0.8);
+  padding: 5px 5px;
+  border-radius: 5px;
+  display: table;   
+  }
+  .projects{
+  display: table;
+  background-color: hsla(60, 46%, 73%, 0.8);
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;  
+  }
+  .contact{
+  display: table;
+  background-color: hsla(0, 0%, 100%, 0.8);
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: -5px;
+  }
+  .contact2{
+  display: table;
+  width: fit-content;
+  background-color: hsla(0, 0%, 100%, 0.7);
+  padding: 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: -5px;
+  margin-left: 20px;  
+  }
+  .contact-lists{
+    display: flex;
+  }
+  .ctd{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  }
+  .ozzy{
+    border: 10px solid #333; 
+    padding: 15px; 
+    width: 250px; 
+    float: left;
+    position: absolute;
+    bottom: 310px;
+    left: 675px; 
+  }
+  .basketball{
+    position: absolute;
+    bottom: 230px;
+    left: 950px;
+    transform: scale(0.65);
+  }
+  .gameText{
+    position: absolute;
+    bottom: 620px;
+    left: 1210px;
+  }
+  .dog{
+  position: fixed;
+  bottom: 105px;
+  right: 60px;
+  }
