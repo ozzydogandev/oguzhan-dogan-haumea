@@ -10,7 +10,19 @@ body::before {
     background-position: center;
     opacity: 0.5;
     z-index: -1;
-}  
+} 
+  .header{
+    position: sticky;
+    top: 10px;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  #navbar{
+    color: #19d5d5;
+    font-weight: bold;
+  }
   h1{
     font-family: "Abril Fatface", serif;
     font-weight: 900;
@@ -72,6 +84,7 @@ body::before {
   border-radius: 5px;
   font-weight: bold;
   margin-top: -5px;
+  margin-left: 20px; 
   }
   .contact2{
   display: table;
@@ -85,6 +98,7 @@ body::before {
   }
   .contact-lists{
     display: flex;
+    align-items: center;
   }
   .ctd{
   position: fixed;
@@ -93,12 +107,12 @@ body::before {
   }
   .ozzy{
     border: 10px solid #333; 
-    padding: 15px; 
-    width: 250px; 
+    padding: 2px; 
+    width: 130px; 
     float: left;
     position: absolute;
-    bottom: 310px;
-    left: 675px; 
+    bottom: 460px;
+    left: 650px; 
   }
   .basketball{
     position: absolute;
