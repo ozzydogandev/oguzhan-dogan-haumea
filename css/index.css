@@ -130,3 +130,59 @@ body::before {
   bottom: 105px;
   right: 60px;
   }
+  /* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    body {
+        font-size: 14px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    .header {
+        width: 100%;
+    }
+    .connect {
+        padding: 8px 25px; 
+        background-size: 15px 15px;
+        background-position: 95px; 
+    }
+    .projects, .contact, .contact2 {
+        padding: 8px 15px; 
+        background-color: hsla(60, 46%, 73%, 0.9); 
+    }
+    .ozzy{
+    position: absolute;
+    bottom: 740px;
+    left: 600px; 
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+    body {
+        font-size: 12px; 
+    }
+    h1 {
+        font-size: 25px;  
+    }
+    .header {
+        position: static; 
+        padding: 8px 3%; 
+    }
+    .navbar a {
+        padding: 10px 5px; 
+    }
+    .connect {
+        font-size: 12px; 
+        padding: 5px 20px; 
+        background-size: 12px 12px; 
+        background-position: 80px; 
+    }
+    .projects, .contact, .contact2 {
+        padding: 5px 10px; 
+    }
+    .contact-lists {
+        flex-direction: column; 
+        align-items: flex-start; 
+    }
+}
