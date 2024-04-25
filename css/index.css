@@ -1,6 +1,6 @@
 body::before {
   content: "";
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -89,7 +89,7 @@ display: table;
 .projects{
 display: table;
 background-color: hsla(60, 46%, 73%, 0.8);
-padding: 10px 20px;
+padding: 10px 30px;
 border-radius: 5px;
 font-weight: bold;  
 }
@@ -148,8 +148,7 @@ right: 0;
       text-align: center;
       margin-top: -10px;
       margin-right: 5px;
-      margin-left: 5px;
-      
+      margin-left: 5px;    
   }
   .ozzy {
       margin-top: 10px;
@@ -176,6 +175,9 @@ right: 0;
   .ctd{
     width: 120px;
     height: auto;
+  }
+  #skills ul {
+    margin: -10px 0 10px 10px;
   }
 }
 
