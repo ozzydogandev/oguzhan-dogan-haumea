@@ -131,6 +131,20 @@ right: 0;
 #messages ul li{
   margin: 10px 0;
 }
+#projects ul{
+  margin: -10px 0 10px 10px;
+  background-color: hsla(60, 46%, 73%, 0.8);
+  padding: 10px 30px;
+  border-radius: 5px;
+  display: table;
+}
+.error {
+  background-color: hsla(0, 54%, 54%, 0.8); /* Red background */
+  padding: 5px;
+  border-radius: 5px;
+  display: table;
+}
+
 
 @media (max-width: 768px) {
   html, body {
