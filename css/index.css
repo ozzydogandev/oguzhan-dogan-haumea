@@ -131,6 +131,9 @@ right: 0;
 #messages ul li{
   margin: 10px 0;
 }
+#messages button{
+  margin-left: 10px;
+}
 
 @media (max-width: 768px) {
   html, body {
