@@ -40,7 +40,6 @@ leaveMessage.addEventListener('submit', (event) => {
     const removeButton = document.createElement('button');
     removeButton.innerText = 'Remove';
     removeButton.type = 'button';
-    removeButton.style.marginLeft = "10px";
 
     removeButton.addEventListener('click', () => {
         const entry = removeButton.parentNode;
@@ -54,10 +53,10 @@ leaveMessage.addEventListener('submit', (event) => {
     const editButton = document.createElement('button');
     editButton.innerText = 'Edit';
     editButton.type = 'button';
-    editButton.style.marginLeft = "10px";
 
     editButton.addEventListener('click', () => {
-        const newMessageText = prompt('Edit your message:', usersMessage);
+        const currentMessage = newMessage.querySelector('span').innerText;
+        const newMessageText = prompt('Edit your message:', currentMessage);
         if (newMessageText !== null) {
             newMessage.querySelector('span').innerText = newMessageText;
         }
