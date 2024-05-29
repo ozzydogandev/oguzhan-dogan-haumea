@@ -4,7 +4,7 @@
     <title>Ozzy Dogan</title>
     <meta name="author" content="Ozzy Dogan">
     <meta name="description" content="First FE project">
-    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
   </head>
   <body>
@@ -17,16 +17,21 @@
               <a href="#connect">Connect</a>
       </nav>
     </header>
+    <div class="content-wrapper">
     <div class="name-image">
       <img class="ozzy" src="pictures/9DCB4DB0-AD4E-4B93-9132-0E5F3DD8950D.JPG" alt="ozzy">
       <h1>Oguzhan Dogan</h1>
     </div>
     <section id="about">
-    <h2>About</h2>
+    <h2>About
+      <div class="stroke-line"></div>
+    </h2>
     <p style="margin-top: -10px;">My name is Oguzhan Dogan but everyone calls me <strong>Ozzy</strong>. I'm a software QA Engineer at Burger King. I like coding and I want to be a software engineer.</p>
     </section>
     <section id="experience">
-    <h2 style="margin-top: -10px;">Experience</h2> 
+    <h2 style="margin-top: -10px;">Experience
+      <div class="stroke-line"></div>
+    </h2> 
     <p style="margin-top: -10px;">During my college years I worked on different projects: </p>
     <ul class="projects" style="margin-top: -2px; font-family: Source Code Pro,monospace; font-weight: 250;">
     <li> Multiplayer Tomato Monster Game </li>
@@ -38,15 +43,20 @@
     </ul>
     </section>
     <section id="skills">
-      <h2>Skills</h2>
+      <h2>Skills
+        <div class="stroke-line"></div>
+      </h2>
       <ul>
       </ul>
     </section>
     <section id="projects">
-      <h2>Projects</h2>
+      <h2>Projects
+        <div class="stroke-line"></div>
+      </h2>
     </section>
     <section id="connect">
-    <h2 style="margin-top: -10px;">Connect</h2> 
+    <h2>Connect
+      <div class="stroke-line"></div></h2> 
     <div class="contact-lists">
     <a href="https://www.linkedin.com/in/oguzhandogan1" class="connectlink">
     <h2 class="connect" style="padding-left: 10px;">Connect</h2>
@@ -65,23 +75,27 @@
     <img class="ctd" src="https://cdn.filestackcontent.com/resize=width:600,height:315,fit:max/quality=value:90/Sn5Neh2cTqGMHSfWysgQ" alt="CTD" width="350" height="100">
     
     <section id="lm">
-      <h2>Leave a Message</h2>
+      <h2>Leave a Message
+        <div class="stroke-line"></div>
+      </h2>
       <form id="leave_message" name="leave_message">
         <label for="usersName">Name: </label><br>
-        <input type="text" name="usersName" required><br>
+        <input type="text" id="usersName" name="usersName" required><br>
         <label for="usersEmail">Email: </label><br>
-        <input type="email" name="usersEmail" required><br>
+        <input type="email" id="usersEmail" name="usersEmail" required><br>
         <label for="usersMessage">Your Message: </label><br>
-        <textarea name="usersMessage" required></textarea><br>
+        <textarea id="usersMessage" name="usersMessage" required></textarea><br>
         <button type="submit">Submit</button>
       </form>
     </section>
     <section id="messages" hidden>
-      <h2>Messages</h2>
+      <h2>Messages
+        <div class="stroke-line"></div>
+      </h2>
       <ul>
-
       </ul>
     </section>
+    </div>
     <script src="js/index.js"></script>   
     </body>
 </html>

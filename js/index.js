@@ -80,7 +80,6 @@ fetch('https://api.github.com/users/ozzydogandev/repos')
         }
         return res.json()})
     .then(repositories => {
-        console.log("here");
         const projectList = document.createElement('ul');
         projectSection.appendChild(projectList);
         repositories.forEach(repo => {
