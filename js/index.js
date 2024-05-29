@@ -68,4 +68,31 @@ leaveMessage.addEventListener('submit', (event) => {
     
     
     leaveMessage.reset();
-}); 
+});
+
+//Fetch
+const projectSection = document.getElementById('projects');
+
+fetch('https://api.github.com/users/ozzydogandev/repos')
+    .then(res => {
+        if (!res.ok) {
+            throw new Error(res.status);
+        }
+        return res.json()})
+    .then(repositories => {
+        console.log("here");
+        const projectList = document.createElement('ul');
+        projectSection.appendChild(projectList);
+        repositories.forEach(repo => {
+            const project = document.createElement('li');
+            project.innerText = repo.name;
+            projectList.appendChild(project);
+        })
+    })
+    .catch(error => {
+        console.log("Failed to fetch repositories: ", error);
+        const errorMessage = document.createElement('p');
+        errorMessage.innerText = "Failed to load projects due to an error.";
+        errorMessage.className = 'error';
+        projectSection.appendChild(errorMessage);
+    });
