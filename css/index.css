@@ -121,6 +121,19 @@ position: fixed;
 bottom: 0;
 right: 0;
 }
+#skills ul {
+  margin: -10px 0 10px 10px;
+  display: table;
+  background-color: hsla(60, 46%, 73%, 0.8);
+  padding: 10px 30px;
+  border-radius: 5px;
+}
+#messages ul li{
+  margin: 10px 0;
+}
+#messages button{
+  margin-left: 10px;
+}
 
 @media (max-width: 768px) {
   html, body {
@@ -178,6 +191,25 @@ right: 0;
   }
   #skills ul {
     margin: -10px 0 10px 10px;
+  }
+  #lm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  }
+  #lm form{
+    margin-bottom: 20px;
+  }
+  #messages ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    margin-right: 20px;
+  }
+  #messages ul li{
+    margin: 10px 0;
   }
 }
 
